@@ -8,7 +8,7 @@ const AppointmentForm = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [nic, setNic] = useState("");
+  const [uid, setUid] = useState("");
   const [dob, setDob] = useState("");
   const [gender, setGender] = useState("");
   const [appointmentDate, setAppointmentDate] = useState("");
@@ -34,7 +34,7 @@ const AppointmentForm = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        "https://hospital-management-system-pe2n.onrender.com/api/v1/user/doctors",
+        "http://localhost:4000/api/v1/user/doctors",
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -47,13 +47,13 @@ const AppointmentForm = () => {
     try {
       const hasVisitedBool = Boolean(hasVisited);
       const { data } = await axios.post(
-        "https://hospital-management-system-pe2n.onrender.com/api/v1/appointment/post",
+        "http://localhost:4000/api/v1/appointment/post",
         {
           firstName,
           lastName,
           email,
           phone,
-          nic,
+          uid,
           dob,
           gender,
           appointment_date: appointmentDate,
@@ -73,7 +73,7 @@ const AppointmentForm = () => {
         setLastName(""),
         setEmail(""),
         setPhone(""),
-        setNic(""),
+        setUid(""),
         setDob(""),
         setGender(""),
         setAppointmentDate(""),
@@ -123,9 +123,9 @@ const AppointmentForm = () => {
           <div>
             <input
               type="number"
-              placeholder="NIC"
-              value={nic}
-              onChange={(e) => setNic(e.target.value)}
+              placeholder="UID"
+              value={uid}
+              onChange={(e) => setUid(e.target.value)}
             />
             <input
               type="date"

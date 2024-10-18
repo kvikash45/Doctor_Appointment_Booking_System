@@ -7,12 +7,7 @@ const Hero = ({ title, imageUrl }) => {
         <div className="banner">
           <h1>{title}</h1>
           <p>
-            ZeeCare Medical Institute is a state-of-the-art facility dedicated
-            to providing comprehensive healthcare services with compassion and
-            expertise. Our team of skilled professionals is committed to
-            delivering personalized care tailored to each patient's needs. At
-            ZeeCare, we prioritize your well-being, ensuring a harmonious
-            journey towards optimal health and wellness.
+          At ZeeCare Medical Institute, we are dedicated to delivering high-quality healthcare with a patient-first approach. Our state-of-the-art facility and expert medical team provide a wide range of services, from preventive care to advanced treatments, all tailored to meet your individual needs. Your health and well-being are our top priorities. <br /> <br />We believe that healthcare is about more than just treating illness—it's about promoting overall wellness. At ZeeCare, we offer holistic care that addresses your physical, mental, and emotional health in a welcoming and supportive environment. Whether you need routine check-ups or specialized care, we are here to guide you toward a healthier, happier life.
           </p>
         </div>
         <div className="banner">

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Biography = ({imageUrl}) => {
+const Biography = ({ imageUrl }) => {
   return (
     <>
       <div className="container biography">
@@ -11,26 +11,10 @@ const Biography = ({imageUrl}) => {
           <p>Biography</p>
           <h3>Who We Are</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            blanditiis sequi aperiam. Debitis fugiat harum ex maxime illo
-            consequatur mollitia voluptatem omnis nihil nesciunt beatae esse
-            ipsam, sapiente totam aspernatur porro ducimus aperiam nisi. Ex
-            magnam voluptatum consectetur reprehenderit fugiat recusandae aut
-            similique illum natus velit, praesentium nostrum nesciunt. Deleniti,
-            nesciunt laboriosam totam iusto!
+            At ZeeHealtCare, we are dedicated to providing high-quality healthcare services with compassion, expertise, and innovation. Our team of skilled doctors, nurses, and medical professionals is committed to delivering personalized care across a wide range of specialties. Whether you're here for a routine check-up, specialized treatment, or urgent care, we prioritize your health and well-being above all.
           </p>
-          <p>We are all in 2025!</p>
-          <p>We are working on a MERN STACK PROJECT for <b>SN BOSE</b> summer internship program.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            assumenda exercitationem accusamus sit repellendus quo optio dolorum
-            corporis corrupti. Quas similique vel minima veniam tenetur
-            obcaecati atque magni suscipit laboriosam! Veniam vitae minus nihil
-            cupiditate natus provident. Ex illum quasi pariatur odit nisi
-            voluptas illo qui ipsum mollitia. Libero, assumenda?
-          </p>
-          <p>Lorem ipsum dolor sit amet!</p>
-          <p>Coding is fun!</p>
+          <p>With state-of-the-art facilities and a patient-centered approach, we strive to ensure that every visit is a positive experience. We believe in the power of healthcare technology, which is why our advanced hospital management system allows patients to easily book appointments, communicate with our team, and receive timely updates—all from the comfort of their home.</p>
+          <p>Our mission is to make healthcare more accessible, efficient, and responsive to the needs of our community. At [Hospital Name], you're not just a patient; you're part of our family, and we are here to support you every step of the way on your health journey.</p>
         </div>
       </div>
     </>

@@ -81,7 +81,15 @@ const Departments = () => {
           {departmentsArray.map((depart, index) => {
             return (
               <div key={index} className="card">
-                <div className="depart-name">{depart.name}</div>
+                <div className="depart-name">
+                  <a
+                    href={`https://en.wikipedia.org/wiki/${encodeURIComponent(depart.name)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {depart.name}
+                  </a>
+                </div>
                 <img src={depart.imageUrl} alt="Department" />
               </div>
             );

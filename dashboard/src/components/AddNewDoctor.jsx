@@ -11,7 +11,7 @@ const AddNewDoctor = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [nic, setNic] = useState("");
+  const [uid, setUid] = useState("");
   const [dob, setDob] = useState("");
   const [gender, setGender] = useState("");
   const [password, setPassword] = useState("");
@@ -52,13 +52,13 @@ const AddNewDoctor = () => {
       formData.append("email", email);
       formData.append("phone", phone);
       formData.append("password", password);
-      formData.append("nic", nic);
+      formData.append("uid", uid);
       formData.append("dob", dob);
       formData.append("gender", gender);
       formData.append("doctorDepartment", doctorDepartment);
       formData.append("docAvatar", docAvatar);
       await axios
-        .post("https://hospital-management-system-pe2n.onrender.com/api/v1/user/doctor/addnew", formData, {
+        .post("http://localhost:4000/api/v1/user/doctor/addnew", formData, {
           withCredentials: true,
           headers: { "Content-Type": "multipart/form-data" },
         })
@@ -70,7 +70,7 @@ const AddNewDoctor = () => {
           setLastName("");
           setEmail("");
           setPhone("");
-          setNic("");
+          setUid("");
           setDob("");
           setGender("");
           setPassword("");
@@ -126,9 +126,9 @@ const AddNewDoctor = () => {
               />
               <input
                 type="number"
-                placeholder="NIC"
-                value={nic}
-                onChange={(e) => setNic(e.target.value)}
+                placeholder="UID"
+                value={uid}
+                onChange={(e) => setUid(e.target.value)}
               />
               <input
                 type={"date"}

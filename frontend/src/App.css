@@ -7,7 +7,8 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #e5e5e5;
+  /* background: #e5e5e5; */
+  background: #ddf0e4;
 }
 .btn {
   padding: 7px 20px;
@@ -21,7 +22,7 @@ body {
   color: #111;
 }
 .purple-btn {
-  background: #9083d5;
+  background: #7e5c84;
   color: #fff;
 }
 p,
@@ -191,12 +192,19 @@ h6 {
   color: #fff;
   font-weight: 700;
   width: fit-content;
-  border: none;
+  border: 2px linear-gradient(140deg, #b35353, #271776ca);
   border-radius: 8px;
   font-size: 24px;
   margin-bottom: 30px;
-  background: linear-gradient(140deg, #9083d5, #271776ca);
+  background: linear-gradient(140deg, #b35353, #271776ca);
 }
+
+.form-component button:hover {
+  background: linear-gradient(140deg, #bd8e8e, #3d25b4ca);
+  color: #0a0a0a;
+  transition: 0.3s;
+}
+
 .form-component .wrapper {
   display: flex;
   gap: 50px;
@@ -307,6 +315,7 @@ h6 {
 }
 footer {
   padding-bottom: 30px !important;
+  background-color: #d4e6fc;
 }
 footer hr {
   margin-bottom: 30px;
@@ -331,7 +340,7 @@ footer .content div ul {
   gap: 10px;
 }
 footer .content div ul a {
-  color: gray;
+  color: #1817c7;
   text-decoration: none;
 }
 footer .content div ul a:hover {
@@ -339,7 +348,7 @@ footer .content div ul a:hover {
   transition: 0.3s;
 }
 footer .content div ul li span {
-  color: gray;
+  color: black
 }
 footer .content div ul li span:first-child {
   width: 150px;
@@ -391,7 +400,7 @@ footer .content div:last-child div svg {
   color: gray;
   margin-bottom: 30px;
 }
-.card {
+/* .card {
   position: relative;
   border-radius: 8px;
   flex: 1;
@@ -405,6 +414,7 @@ footer .content div:last-child div svg {
   margin: 0 10px;
   text-decoration: none;
 }
+
 .card img {
   position: absolute;
   width: 100%;
@@ -412,8 +422,50 @@ footer .content div:last-child div svg {
   z-index: -1;
   top: 0;
   left: 0;
+} */
+
+.card {
+  position: relative;
+  border-radius: 8px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 20px;
+  min-height: 360px;
+  margin: 0 10px;
+  text-decoration: none;
+  overflow: hidden; /* Prevents overflow */
+  transition: transform 0.3s ease; /* Smooth transform transition */
 }
-.card .depart-name {
+
+.card:hover {
+  transform: scale(1.03); /* Slightly enlarge the card on hover */
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease; /* Smooth transition for the image */
+}
+
+.card:hover img {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+/* Add these styles */
+.container {
+  overflow-x: hidden; /* Prevent horizontal scrollbar for the container */
+}
+
+
+/* .card .depart-name {
   margin-bottom: 30px;
   background: #e5e5e5;
   width: 320px;
@@ -427,6 +479,54 @@ footer .content div:last-child div svg {
   height: fit-content;
   font-weight: 700;
 }
+
+
+.card .depart-name:hover {
+  background: rgb(6, 31, 85);
+  color:#e5e5e5;;
+  transition: 0.3s;
+  cursor: pointer;
+} */
+
+
+.card .depart-name {
+  margin-bottom: 30px;
+  background: #e5e5e5;
+  width: 320px;
+  font-size: 24px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the text vertically */
+  padding: 12px;
+  border-radius: 30px;
+  position: relative;
+  height: fit-content;
+  font-weight: 700;
+  transition: 0.3s; /* Smooth transition for background and color */
+}
+
+.card .depart-name a {
+  color: inherit; /* Inherit text color from parent div */
+  text-decoration: none; /* Remove underline from link */
+}
+
+.card .depart-name:hover {
+  background: rgb(6, 31, 85); /* Change background color on hover */
+  color: #e5e5e5; /* Change text color on hover */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.card .depart-name a:hover {
+  color: #e5e5e5; /* Ensure text color changes on hover */
+}
+
+.card .depart-name a:visited {
+  color: inherit; /* Keeps visited links from changing color */
+}
+
+
+
 
 /**********************************************************************************************************************/
 nav {
@@ -476,18 +576,37 @@ nav .btn {
   padding: 8px 20px;
   color: #e5e5e5;
   background: transparent;
-  border: none;
+  border: 2px solid black;
   border-radius: 20px;
   font-size: 20px;
   font-weight: 600;
   z-index: 2;
 }
+
 nav .logoutBtn {
   background: linear-gradient(135deg, black, rgb(49, 49, 49));
+  color: #ede8e8;
+  transition: 0.3s;
 }
+
+nav .logoutBtn:hover {
+  background: #f8f9f8;
+  color: #0a0a0a;
+  transition: 0.3s;
+}
+
 nav .loginBtn {
   background: linear-gradient(135deg, black, rgb(49, 49, 49));
+  color: #ede8e8;
+  transition: 0.3s;
 }
+
+nav .loginBtn:hover {
+  background: #f8f9f8;
+  color: #0a0a0a;
+  transition: 0.3s;
+}
+
 nav .hamburger {
   display: none;
 }

@@ -106,11 +106,16 @@ body {
   color: #fff;
   font-weight: 700;
   width: fit-content;
-  border: none;
+  border: 2px linear-gradient(140deg, #b35353, #271776ca);
   border-radius: 8px;
   font-size: 24px;
   margin-bottom: 30px;
-  background: linear-gradient(140deg, #9083d5, #271776ca);
+  background: linear-gradient(140deg, #b35353, #271776ca);
+}
+.form-component button:hover {
+  background: linear-gradient(140deg, #dcacac, #a297d9ca);
+  color: #0a0a0a;
+  transition: 0.3s;
 }
 .form-component .wrapper {
   display: flex;
@@ -554,7 +559,12 @@ body {
   border-radius: 8px;
   font-size: 24px;
   margin-bottom: 30px;
-  background: linear-gradient(140deg, #9083d5, #271776ca);
+  background: linear-gradient(140deg, #9c6da5, #271776ca);
+}
+.add-doctor-form button:hover {
+  background: linear-gradient(140deg, #c2b0c5, #271776ca);
+  color: #0a0a0a;
+  transition: 0.3s;
 }
 @media (max-width: 945px) {
   .add-doctor-form form .first-wrapper {
